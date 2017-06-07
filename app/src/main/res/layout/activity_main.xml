@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.example.administrator.mycalendarproject.activity.MainActivity">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+      android:id="@+id/rl_calendar_title_area"
+      android:layout_width="match_parent"
+      android:layout_height="30dp">
+
+      <RelativeLayout
+        android:id="@+id/rl_calendar_last_month"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tv_calendar_month">
+
+        <TextView
+          android:layout_width="9dp"
+          android:layout_height="14dp"
+          android:layout_marginRight="20dp"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:background="@drawable/bt_calendar_last" />
+      </RelativeLayout>
+
+      <TextView
+        android:id="@+id/tv_calendar_month"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#aa564b4b"
+        android:textSize="18sp" />
+
+      <RelativeLayout
+        android:id="@+id/rl_calendar_next_month"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_calendar_month">
+
+        <TextView
+          android:layout_width="9dp"
+          android:layout_height="14dp"
+          android:layout_marginLeft="20dp"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:background="@drawable/bt_calendar_next" />
+      </RelativeLayout>
+    </RelativeLayout>
+
+    <com.example.administrator.mycalendarproject.views.KCalendar
+      android:id="@+id/kc_window_calendar"
+      android:layout_width="match_parent"
+      android:layout_height="180dp"
+      android:layout_marginLeft="11dp"
+      android:layout_marginRight="11dp" />
+  </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">MyCalendarProject</string>
+  <string name="year">年</string>
+  <string name="month">月</string>
+</resources>

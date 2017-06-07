@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:background="@color/primary_gray_f4"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        style="@style/primary_gray_text_66"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="取消"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/dialog_ok"
+        style="@style/primary_gray_text_66"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="确定"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+
